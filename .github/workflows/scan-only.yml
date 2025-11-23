@@ -10,7 +10,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@0.28.0
         with:
-          image-ref: 'ghcr.io/<tonuser>/<ton-repo>:latest'
+          image-ref: 'ghcr.io/masc531/ue19-lab-05:latest'
           format: 'table'
           exit-code: '0'
           ignore-unfixed: true
