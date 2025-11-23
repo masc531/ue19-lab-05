@@ -25,26 +25,18 @@ Le script `app.py` utilise la librairie `requests` et peut être exécuté direc
 git clone https://github.com/<ton-user>/ue19-lab-05.git
 cd ue19-lab-05
 
-text
-
 2. (Optionnel) Créer un environnement virtuel :
 
 python -m venv .venv
 source .venv/bin/activate # sous Windows : .venv\Scripts\activate
 
-text
-
 3. Installer les dépendances :
 
 pip install -r requirements.txt
 
-text
-
 ## Lancement sans Docker
 
 python app.py
-
-text
 
 Le programme demande d'encoder la clé d'API pour Alpha Vantage.
 
@@ -62,21 +54,15 @@ Cours des 5 valeurs GAFAM (Alpha Vantage) :
 
     META : xxx.xx USD
 
-text
-
 ## Utilisation avec Docker
 
 1. Construire l’image :
 
 docker build -t ue19-lab-05 .
 
-text
-
 2. Lancer le conteneur avec la clé API :
 
 docker run --rm -e ue19-lab-05
-
-text
 
 Le conteneur exécute `python app.py` et affiche les mêmes informations dans la sortie standard.
 
@@ -87,8 +73,6 @@ ue19-lab-05/
 ├── requirements.txt # Dépendances (requests)
 ├── Dockerfile # Image Docker qui exécute app.py
 └── README.md # Documentation du projet
-
-text
 
 ## Remarques
 
