@@ -1,11 +1,11 @@
-name: Build, Scan and publish Docker image
+name: Build and publish Docker image
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build-scan-push:
+  build-and-push:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -27,22 +27,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          load: true 
-          tags: ghcr.io/${{ github.repository }}:latest
-
-      - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@v0.28.0
-        with:
-          image-ref: 'ghcr.io/${{ github.repository }}:latest'
-          format: 'table'
-          exit-code: '0'
-          ignore-unfixed: true
-
-      - name: Push Docker image
+      - name: Build and Push to GitHub Packages
         uses: docker/build-push-action@v5
         with:
           context: .
