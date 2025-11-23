@@ -68,11 +68,11 @@ Le conteneur exécute `python app.py` et affiche les mêmes informations dans la
 
 ## Structure du projet
 
-ue19-lab-05/
-├── app.py # Script Python qui interroge l’API et affiche les cours GAFAM
-├── requirements.txt # Dépendances (requests)
-├── Dockerfile # Image Docker qui exécute app.py
-└── README.md # Documentation du projet
+ue19-lab-05/  
+├── app.py           # Script Python qui interroge l’API et affiche les cours GAFAM  
+├── requirements.txt # Dépendances (requests)  
+├── Dockerfile       # Image Docker qui exécute app.py  
+└── README.md        # Documentation du projet
 
 ## Remarques
 
