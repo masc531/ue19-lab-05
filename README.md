@@ -3,7 +3,7 @@
 ## Description
 
 Ce projet est une application en Python 3 qui interroge l’API Alpha Vantage pour afficher le dernier cours des 5 actions GAFAM :  
-Microsoft [finance:Microsoft Corporation], Apple [finance:Apple Inc.], Alphabet (Google) [finance:Alphabet Inc.], Amazon [finance:Amazon.com, Inc.] et Meta (Facebook) [finance:Meta Platforms, Inc.].  
+Microsoft, Apple, Alphabet (Google), Amazon et Meta (Facebook).  
 Le script `app.py` utilise la librairie `requests` et peut être exécuté directement ou via un conteneur Docker.
 
 ## Fonctionnalités
