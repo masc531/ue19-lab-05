@@ -62,7 +62,7 @@ docker build -t ue19-lab-05 .
 
 2. Lancer le conteneur avec la clé API :
 
-docker run --rm ue19-lab-05
+docker run -it ue19-lab-05
 
 Le conteneur exécute `python app.py`, demande la clé d'API et donne les informations dans la sortie standard.
 
